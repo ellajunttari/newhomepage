@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="school.css" rel="StyleSheet" type="text/css">
+  <script src="home.js"> </script>
+	<title>school</title>
+</head>
+<body id="pageBody">
+   
+
+  <div id="pageDiv">
+    <div id="sidebarDiv">
+      <!-- Login nappi josta avataan ruutu -->
+      <button id = "login1" onclick="login()">Login</button>
+
+
+      <div id="flexMenu">
+        <div class="vertical-scroll">
+          <div id="menu-links">
+            <div >
+              <a class="menu-link" href="http://users.jyu.fi/~elmajunt/newhome/index">home</a>
+            </div>
+            <div >
+              <a class="menu-link" href="http://users.jyu.fi/~elmajunt/newhome/school">school</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bodyDiv">
+      <div id="topDiv">
+        <div id="headerDiv">
+            <img src="banner.png" alt="banner" />
+        </div>
+
+        <div id="titleDiv">
+          <div id="title">
+            <h1 id="titleP">school</p>
+          </div>
+          
+        </div>
+      </div>
+      <div id="centerDiv">
+
+              <!-- The Modal -->
+        <div id="modaali" class="modal">
+          <span onclick="spanClick()" class="close" title="Close Modal">&times;</span>
+
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+              <div id="usernameDiv">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+              </div>
+              
+              <div id="passwordDiv">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+              </div>
+              
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="cancelButton()" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div> 
+      <!------------------------------------------------->
+        
+        <div id="logo-links">
+          <div class="img-div">
+            <img class="link-img" src="jisho.jpg" />
+          </div>
+          <div class="img-div">
+            <img class="link-img" src="tori.png" />
+          </div>
+          <div class="img-div">
+            <img class="link-img" src="translate.jpg" />
+          </div>
+          <div class="img-div-not-square">
+            <img class="img-not-square" src="kaleva.png" />
+          </div>
+        </div>
+
+        <div id="reminders">
+          <p>reminders</p>
+          <p>two classes tomorrow</p>
+        </div>
+      </div>
+    </div>
+    
+       
+  
+    
+  </div>
+  
+</body>
+</html>

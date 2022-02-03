@@ -1,0 +1,232 @@
+html {
+  height:100%;
+}
+
+img {
+  height: 100%;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+#titleDiv {
+  width:100%;
+  height: 50px;
+  display: flex;
+  background: white;
+  justify-content: left;
+  flex-shrink:0;
+}
+
+#title {
+  max-width: 100%;
+  padding-left: 50px;
+  vertical-align: top;
+}
+
+#titleP {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  color: black;
+  
+}
+
+#topDiv {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+}
+
+#pageDiv {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+#pageBody{
+  background-color: white;
+  height: 100%;
+}
+
+#sidebarDiv {
+  /**display: flex;*/
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index:1;
+  background-color: oldlace;
+  width: 250px;
+  height: 100%;
+}
+
+#flexMenu {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  padding: 10px;
+}
+
+.vertical-scroll {
+  overflow: hidden auto;
+}
+
+#menu-links {
+  display: block;
+}
+
+.menu-link {
+  display: block;
+  width: 100%;
+}
+
+#bodyDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#headerDiv {
+  height: 150px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+#centerDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: top;
+  width:100%;
+  
+}
+
+#logo-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: oldlace;
+  border: 2px solid black;
+  max-width: 50%;
+  max-height: 50%;
+  min-width: 200px;
+}
+
+
+.img-div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.img-div-not-square {
+  max-width: 150px;
+  height: 50px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  
+}
+.link-img {
+  
+}
+
+.img-not-square {
+  width: 100%;
+}
+
+#reminders {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  align-items: center;
+  background-color: oldlace;
+  border: 2px solid black;
+  max-width: 50%;
+  min-height: 200px;
+  max-height: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+  #logo-links {
+    min-width: 200px;
+  }
+
+  #sidebarDiv {
+    width: 100px;
+    height: 100%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+} 
